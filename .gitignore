@@ -1,0 +1,8 @@
+# Dependencies - these can be reinstalled with "npm install"
+node_modules/
+
+# Build output - these are generated files
+dist/
+
+# System files
+.DS_Store
