@@ -167,6 +167,7 @@ export default function Portfolio() {
           <span className={loaded ? 'show' : ''}>Joel</span>
           <span className={`accent ${loaded ? 'show' : ''}`}>Boachie</span>
         </h1>
+        <p className={`tagline ${loaded ? 'show' : ''}`}>Problem-solving through structured design</p>
         <button className={`scroll-btn ${loaded ? 'show' : ''}`} onClick={() => scrollToSection('work')}>
           <span className="line" />
           <span>Scroll to explore</span>
@@ -584,15 +585,14 @@ export default function Portfolio() {
         </div>
         {/* Right column: about me text */}
         <div className="about-right">
-          <p className="about-headline">I craft <em>intuitive</em> digital products that solve real problems.</p>
+          <p className="about-headline">From <em>spreadsheets</em> to screen design.</p>
           <p className="about-bio">I didn't start out in design.</p>
           <p className="about-bio">My background is in Accounting, where I learned to think in systems, patterns, and balance. Spreadsheets, structure, and logic trained me to pay attention to detail and approach problems thoughtfully.</p>
           <p className="about-bio">But I've always been creative.</p>
           <p className="about-bio">Outside of work, I've always loved photography, art, music, gaming, and soccer. I'm naturally drawn to how things look, feel, and function. Over time, I realized I was most excited not by balancing numbers, but by creating experiences.</p>
           <p className="about-bio">That curiosity led me to design.</p>
-          <p className="about-bio">When I discovered design as a career path, it immediately felt right. It brought together analytical thinking and creativity in a way that made sense to me. Understanding people, identifying friction, and creating solutions that make everyday tasks easier became something I genuinely enjoyed doing.</p>
-          <p className="about-bio">Today, I design with intention. I care about clarity, usability, and building things that feel thoughtful and purposeful. My accounting background helps me stay structured and analytical, while my creative side pushes me to explore, experiment, and refine.</p>
-          <p className="about-bio">I am currently freelancing, continuously learning, and focused on creating digital experiences that are simple, useful, and grounded in real human needs.</p>
+          <p className="about-bio">When I discovered design as a career path, it immediately felt right. Understanding people, identifying friction, and creating solutions that make everyday tasks easier became something I genuinely enjoyed doing. My accounting background keeps me structured and analytical, while my creative side pushes me to explore and refine.</p>
+          <p className="about-bio">Currently freelancing, continuously learning, and focused on creating digital experiences that are simple, useful, and grounded in real human needs.</p>
           <p className="about-bio">And yes, I still try to make time for gaming when I can 😄</p>
         </div>
       </section>
@@ -666,6 +666,8 @@ export default function Portfolio() {
         @media (max-width: 768px) { .hero-bg { width: 250px; height: 250px; right: 0; top: 40%; opacity: 0.15; } }
         .hero .subtitle { font-family: 'Lato', sans-serif; font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: #E8D5B7; margin-bottom: 24px; opacity: 0; transform: translateY(30px); transition: all 1s ease 0.3s; }
         .hero .subtitle.show { opacity: 1; transform: translateY(0); }
+        .tagline { font-family: 'Lato', sans-serif; font-size: 16px; color: #888; letter-spacing: 0.05em; margin-top: 24px; opacity: 0; transform: translateY(20px); transition: all 1s ease 0.8s; }
+        .tagline.show { opacity: 1; transform: translateY(0); }
         .hero .title { font-family: 'Playfair Display', serif; font-size: clamp(48px, 12vw, 160px); font-weight: 400; line-height: 0.9; letter-spacing: -0.03em; }
         .hero .title span { display: block; opacity: 0; transform: translateY(60px); transition: all 1s ease; }
         .hero .title span.show { opacity: 1; transform: translateY(0); }
