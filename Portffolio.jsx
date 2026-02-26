@@ -144,7 +144,7 @@ export default function Portfolio() {
 
       {/* Nav */}
       <nav className="nav">
-        <button className="nav-logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>JB © 2024</button>
+        <button className="nav-logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>JB © 2026</button>
         <button className="menu-btn" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} aria-label="Menu">
           <span className={mobileMenuOpen ? 'open' : ''} />
           <span className={mobileMenuOpen ? 'open' : ''} />
@@ -624,7 +624,7 @@ export default function Portfolio() {
           {socialLinks.map((s) => <a key={s.name} href={s.url} target="_blank" rel="noopener noreferrer">{s.name}</a>)}
         </div>
         <div className="footer">
-          <span>© 2024 All rights reserved</span>
+          <span>© 2026 All rights reserved</span>
           <span>Designed with intention</span>
         </div>
       </section>
